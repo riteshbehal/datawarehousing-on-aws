@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:PassRole",
+                "ec2:DescribeVpcs",
+                "quicksight:DeleteVPCConnection",
+                "quicksight:DescribeVPCConnection",
+                "iam:ListRoles",
+                "ec2:DescribeSubnets",
+                "quicksight:ListVPCConnections",
+                "quicksight:UpdateVPCConnection",
+                "quicksight:CreateVPCConnection",
+                "ec2:DescribeSecurityGroups",
+                "ec2:CreateNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DeleteNetworkInterface"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
