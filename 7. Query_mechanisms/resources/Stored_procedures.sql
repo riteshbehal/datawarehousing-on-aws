@@ -7,7 +7,7 @@ Begin
   SET pricepaid = v_new_price
   where salesid = v_sales_id;
   if not found then
-    raise notice ‘no sales record found for sales id %’, v_sales_id;
+    raise notice 'no sales record found for sales id %', v_sales_id;
   end if;
 End;
 $$;

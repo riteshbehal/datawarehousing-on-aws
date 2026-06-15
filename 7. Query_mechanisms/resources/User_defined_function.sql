@@ -3,7 +3,7 @@ CREATE OR REPLACE FUNCTION f_concat_ws(s1 VARCHAR, s2 VARCHAR)
 RETURNS VARCHAR
 STABLE
 AS $$
-SELECT CONCAT($1, concat(’ ',$2))
+SELECT CONCAT($1, concat('',$2))
 $$ LANGUAGE sql
 
 -- using UDF
